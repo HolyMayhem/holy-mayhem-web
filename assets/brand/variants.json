@@ -1,0 +1,21 @@
+{
+  "active": "cinematic",
+  "variants": {
+    "original": {
+      "label": "Исходное стекло",
+      "source": "assets/brand/glass-cross-source.png"
+    },
+    "clean-glass": {
+      "label": "Чистое стекло",
+      "source": "assets/brand/variants/01-clean-glass.png"
+    },
+    "cinematic": {
+      "label": "Кинематографичный",
+      "source": "assets/brand/variants/02-cinematic.png"
+    },
+    "sculptural": {
+      "label": "Скульптурный",
+      "source": "assets/brand/variants/03-minimal-monolith.png"
+    }
+  }
+}

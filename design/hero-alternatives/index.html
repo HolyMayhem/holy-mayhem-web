@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Holy Mayhem — варианты первого экрана</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="icon" href="/images/brand/favicon-glass.png" />
+    <link rel="stylesheet" href="/preview.css" />
+    <script src="/preview.js" defer></script>
+  </head>
+  <body>
+    <main class="comparison">
+      <header class="comparison-heading">
+        <div>
+          <p class="eyebrow">Holy Mayhem / дизайн</p>
+          <h1>Три варианта первого экрана</h1>
+          <p>Та же типографика и композиция. Три разных характера движения.</p>
+        </div>
+        <a
+          href="http://localhost:3000"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Текущий сайт ↗</a
+        >
+      </header>
+      <div class="options" role="group" aria-label="Вариант графики">
+        <button class="option" data-variant="cross" aria-pressed="true">
+          <span class="option-index">Вариант 1</span
+          ><strong>Стеклянный крест</strong
+          ><span>Фирменный знак. Тихое покачивание и объёмное стекло.</span>
+        </button>
+        <button class="option" data-variant="mobius" aria-pressed="false">
+          <span class="option-index">Вариант 2</span
+          ><strong>Лента Мёбиуса</strong
+          ><span>Непрерывная форма. Медленное пространственное вращение.</span>
+        </button>
+        <button class="option" data-variant="waves" aria-pressed="false">
+          <span class="option-index">Вариант 3</span><strong>Поле волн</strong
+          ><span>Тонкая сетка. Плавный поток без вращающегося объекта.</span>
+        </button>
+      </div>
+      <section
+        class="preview-panel"
+        aria-label="Предпросмотр выбранного варианта"
+      >
+        <div class="preview-toolbar">
+          <span id="current-label" aria-live="polite">Стеклянный крест</span>
+          <div class="preview-actions">
+            <div class="device-switch" role="group" aria-label="Ширина экрана">
+              <button data-device="desktop" aria-pressed="true">Desktop</button
+              ><button data-device="mobile" aria-pressed="false">Mobile</button>
+            </div>
+            <button id="pause" aria-pressed="false">Пауза</button>
+          </div>
+        </div>
+        <div class="preview-stage">
+          <div class="frame-wrap">
+            <iframe
+              id="site-preview"
+              src="/hero.html"
+              title="Первый экран Holy Mayhem с выбранной графикой"
+              tabindex="-1"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <footer class="comparison-footer">
+        <p id="variant-note">
+          Крест из вашего изображения. На первом экране он становится главным
+          визуальным знаком бренда.
+        </p>
+        <span>Отдельный предпросмотр. Главная страница не изменена.</span>
+      </footer>
+    </main>
+  </body>
+</html>

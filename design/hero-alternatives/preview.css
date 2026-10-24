@@ -1,0 +1,248 @@
+:root {
+  color-scheme: dark;
+  font-family: Arial, sans-serif;
+  background: #0c0d10;
+  color: #f0eff5;
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #b6acf5;
+  outline-offset: 4px;
+}
+a {
+  color: #b6afc9;
+  text-decoration: none;
+}
+.comparison {
+  max-width: 1536px;
+  padding: 40px 32px;
+  margin: auto;
+}
+.comparison-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+.eyebrow {
+  color: #96939f;
+  font-size: 11px;
+  margin: 0 0 12px;
+}
+h1 {
+  font-size: 27px;
+  letter-spacing: -1px;
+  font-weight: 500;
+  margin: 0;
+}
+.comparison-heading p:last-child {
+  color: #a29cae;
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 12px 0 0;
+}
+.comparison-heading a {
+  font-size: 12px;
+  white-space: nowrap;
+}
+.options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.option {
+  text-align: left;
+  padding: 20px 22px;
+  border: 1px solid #2b2932;
+  border-radius: 10px;
+  background: #121318;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.option:hover {
+  background: #191820;
+  border-color: #6b617b;
+}
+.option[aria-pressed="true"] {
+  background: #1d1927;
+  border-color: #827399;
+}
+.option-index {
+  font-size: 10px;
+  color: #a797bd;
+}
+.option strong {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+}
+.option > span:last-child {
+  color: #a29baa;
+  font-size: 11px;
+  line-height: 1.7;
+}
+.preview-panel {
+  border: 1px solid #2b2932;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.preview-toolbar {
+  padding: 14px 20px;
+  background: #131318;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid #2b2932;
+  font-size: 12px;
+}
+.preview-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.device-switch {
+  display: flex;
+  padding: 3px;
+  border: 1px solid #35303f;
+  border-radius: 6px;
+  gap: 3px;
+}
+.device-switch button {
+  background: none;
+  border: 0;
+  padding: 7px 12px;
+  font-size: 10px;
+  color: #a49bad;
+  border-radius: 3px;
+}
+.device-switch button[aria-pressed="true"] {
+  background: #302837;
+  color: #f2e9fb;
+}
+#pause {
+  padding: 9px 13px;
+  border: 1px solid #38303e;
+  border-radius: 5px;
+  background: #1e1923;
+  min-width: 94px;
+  font-size: 10px;
+}
+.preview-stage {
+  background: #090a0d;
+  display: flex;
+  justify-content: center;
+  min-height: 600px;
+  overflow: hidden;
+}
+.frame-wrap {
+  width: 100%;
+  transition: width 0.35s ease;
+  background: #08090b;
+}
+iframe {
+  display: block;
+  width: 100%;
+  height: 800px;
+  border: 0;
+  pointer-events: none;
+}
+.preview-stage[data-device="mobile"] .frame-wrap {
+  width: 392px;
+  border-inline: 1px solid #39303e;
+}
+.comparison-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 30px;
+  margin-top: 20px;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #c0b5cd;
+}
+.comparison-footer p {
+  max-width: 650px;
+  margin: 0;
+}
+.comparison-footer > span {
+  color: #8c8398;
+  font-size: 10px;
+  text-align: right;
+}
+@media (max-width: 760px) {
+  .comparison {
+    padding: 25px 16px;
+  }
+  .comparison-heading {
+    align-items: flex-start;
+  }
+  .comparison-heading h1 {
+    font-size: 23px;
+    max-width: 270px;
+  }
+  .comparison-heading a {
+    font-size: 10px;
+  }
+  .options {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+  .option {
+    padding: 16px 18px;
+    gap: 8px;
+  }
+  .option strong {
+    font-size: 16px;
+  }
+  .preview-toolbar {
+    padding: 13px 12px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .preview-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .comparison-footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .comparison-footer > span {
+    text-align: left;
+  }
+  .preview-stage[data-device="mobile"] .frame-wrap {
+    max-width: 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

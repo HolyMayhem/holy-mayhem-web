@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+playwright-report/
+test-results/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.DS_Store
+*.tsbuildinfo
+.codebase-memory/
+reports/
