@@ -33,6 +33,17 @@ export const socialLinks: SocialLink[] = [
     },
   },
   {
+    id: "instagram",
+    name: "Instagram",
+    handle: "@holymhm",
+    url: "https://www.instagram.com/holymhm",
+    icon: "instagram",
+    description: {
+      ru: "Мой профиль и публикации в Instagram.",
+      en: "My profile and posts on Instagram.",
+    },
+  },
+  {
     id: "contact",
     name: "Telegram",
     handle: "@holymayhem",
