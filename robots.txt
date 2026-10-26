@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://holymayhem.github.io/holy-mayhem-web/sitemap.xml
