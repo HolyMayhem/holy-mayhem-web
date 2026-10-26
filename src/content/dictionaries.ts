@@ -67,6 +67,33 @@ const ru = {
       "Интерес к технологиям",
     ],
   },
+  collaboration: {
+    label: "Сотрудничество",
+    title: "Открыт к вашим идеям.",
+    intro:
+      "Помогу с разработкой и визуальной частью вашего проекта: от Telegram-бота или сайта до моушен-видео для продукта и несложной графики.",
+    terms: "На платной основе",
+    button: "Обсудить проект",
+    note: "Напишите в Telegram — обсудим задачу, сроки и стоимость.",
+    services: {
+      bots: {
+        title: "Telegram-боты",
+        description: "Боты для ваших задач: заявки, уведомления и автоматизация.",
+      },
+      websites: {
+        title: "Сайты",
+        description: "Лендинги, персональные сайты и страницы продуктов.",
+      },
+      motion: {
+        title: "Моушен-дизайн",
+        description: "Моушен-видео и анимация для презентации вашего продукта.",
+      },
+      graphics: {
+        title: "Несложная графика",
+        description: "Баннеры, обложки и визуальные материалы для проекта.",
+      },
+    },
+  },
   connect: {
     label: "На связи",
     title: "Продолжим разговор.",
@@ -169,6 +196,33 @@ const en: Dictionary = {
       "Care for the interface",
       "Curiosity about technology",
     ],
+  },
+  collaboration: {
+    label: "Work together",
+    title: "Open to your ideas.",
+    intro:
+      "I can help with development and visuals for your project: from a Telegram bot or website to a product motion video and simple graphics.",
+    terms: "Available for paid projects",
+    button: "Discuss a project",
+    note: "Message me on Telegram to discuss the scope, timeline, and price.",
+    services: {
+      bots: {
+        title: "Telegram bots",
+        description: "Bots for enquiries, notifications, and everyday automation.",
+      },
+      websites: {
+        title: "Websites",
+        description: "Landing pages, personal websites, and product pages.",
+      },
+      motion: {
+        title: "Motion design",
+        description: "Motion videos and animation to showcase your product.",
+      },
+      graphics: {
+        title: "Simple graphics",
+        description: "Banners, cover images, and visuals for your project.",
+      },
+    },
   },
   connect: {
     label: "Let’s connect",
