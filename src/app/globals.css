@@ -825,7 +825,7 @@ h2 {
 }
 .social-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
 }
 .social-card {
@@ -922,6 +922,70 @@ h2 {
 .support-action .button {
   min-height: 40px;
   font-size: 11px;
+}
+.collaboration {
+  border-bottom: 1px solid var(--border);
+}
+.collaboration-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 64px;
+  align-items: center;
+}
+.collaboration-heading {
+  margin-bottom: 0;
+}
+.collaboration-heading .section-description {
+  max-width: 440px;
+}
+.collaboration-terms {
+  display: table;
+  margin-top: 24px;
+  padding: 7px 11px;
+  border: 1px solid #3b3547;
+  border-radius: 5px;
+  background: #1d1924;
+  color: #d4cbed;
+  font-size: 11px;
+}
+.collaboration-heading .button {
+  margin-top: 24px;
+}
+.collaboration-note {
+  max-width: 330px;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.8;
+}
+.collaboration-services {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.collaboration-service {
+  padding: 26px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: linear-gradient(140deg, #1d1924, var(--surface) 70%);
+}
+.collaboration-service > svg {
+  color: var(--accent);
+  margin-bottom: 22px;
+}
+.collaboration-service h3 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}
+.collaboration-service p {
+  margin-top: 10px;
+  color: #aaa4b1;
+  font-size: 12px;
+  line-height: 1.85;
 }
 .footer {
   border-top: 1px solid var(--border);
@@ -1359,6 +1423,9 @@ h2 {
   }
 }
 @media (max-width: 1100px) {
+  .social-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .container {
     width: calc(100% - 64px);
   }
@@ -1424,6 +1491,10 @@ h2 {
   }
 }
 @media (max-width: 800px) {
+  .collaboration-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
   .site-header {
     height: 78px;
   }
@@ -1615,6 +1686,16 @@ h2 {
   }
 }
 @media (max-width: 600px) {
+  .collaboration-services {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+  .collaboration-service {
+    padding: 24px;
+  }
+  .collaboration-service > svg {
+    margin-bottom: 16px;
+  }
   .container {
     width: calc(100% - 40px);
   }
