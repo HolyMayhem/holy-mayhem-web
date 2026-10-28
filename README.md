@@ -152,7 +152,9 @@ NEXT_PUBLIC_SITE_URL=https://username.github.io
 NEXT_PUBLIC_BASE_PATH=/repository
 ```
 
-Затем пересоберите и публикуйте `out/`. Для предпросмотра такой сборки передайте такой же `NEXT_PUBLIC_BASE_PATH` в окружение preview. Пустой `.nojekyll` уже включён в экспорт для публикации через ветку GitHub Pages. Деплой намеренно не выполнялся: домен и хостинг ещё не заданы.
+Затем пересоберите и публикуйте `out/`. Для предпросмотра такой сборки передайте такой же `NEXT_PUBLIC_BASE_PATH` в окружение preview. Пустой `.nojekyll` уже включён в экспорт для публикации через ветку GitHub Pages.
+
+Публикация этого репозитория настроена через GitHub Actions: `.github/workflows/pages.yml` собирает сайт и публикует только `out/` при push в `main` или ручном запуске workflow. Адрес: https://holymayhem.github.io/holy-mayhem-web/. В настройках Pages выбран источник **GitHub Actions**; домен и base path сборка получает из `actions/configure-pages`.
 
 Основной знак бренда — стеклянный крест `cinematic` (вариант №2). Все три варианта, исходный крест и промпты сохранены в `assets/brand/`; инструкция — `assets/brand/README.md`. Для переключения достаточно изменить `active` в `assets/brand/variants.json` и выполнить `npm run build` или перезапустить `npm run dev`. Подготовка PNG/WebP, favicon и Apple Touch запускается автоматически; отдельно — `npm run brand:prepare`. Компоненты и метаданные используют общую конфигурацию `src/config/brand.ts`.
 
